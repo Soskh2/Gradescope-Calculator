@@ -36,8 +36,10 @@ p2 {
 }
 
 .error {
+    margin-top: 15px;
+    margin: 10px;
     text-align: center;
-    size: 15px;
+    size: 20px;
 }
 
 .NaN {
