@@ -5,10 +5,9 @@ function createBoxes() {
   let allitems = []
   let body = document.getElementsByTagName("tbody")[0];
   let rows = body.getElementsByTagName("tr");
-  console.log(rows.length)
 
   for (let i = 0; i < rows.length; i++) {
-    if (rows[i].getElementsByTagName("td")[0].className === "submissionStatus") {
+    if (rows[i].getElementsByTagName("td")[0].className === "submissionStatus" || rows[i].getElementsByTagName("td")[0].className === "submissionStatus sorting_1") {
       let assignment = {
         name: rows[i].getElementsByTagName("th")[0].textContent, 
         score: rows[i].getElementsByTagName("td")[0].getElementsByClassName("submissionStatus--score")[0].textContent}

@@ -21,7 +21,6 @@ function gotPopMessage(request, sender, sendResponse) {
 
   // If no graded assignments yet
   if (request.length === 0) {
-    console.log("empty")
     document.getElementsByClassName("page")[0].innerHTML = '<h1>' + 'There are no graded assignments yet!' + '</h1>' + '<p class ="error" >' + 'Check back after you have submitted an assignment and your professor has graded it!' + '</p>'
   }
   else {
